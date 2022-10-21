@@ -1,0 +1,56 @@
+
+*, *::after, *::before
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	padding: 5rem ;
+	/* border: 1px solid red; */
+}
+
+.container .image img
+{
+	width: 300px;
+	margin-bottom: 5rem;
+	/* border: 1px solid red; */
+}
+.container
+{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	/* border: 1px solid rgb(81, 0, 255); */
+}
+.instruments
+{
+	display: grid;
+	gap : 1rem;
+	grid-template-columns: repeat(3, 100px);
+	grid-template-rows: repeat(3, 100px);
+	/* border: 1px solid rgb(61, 157, 9); */
+}
+.instruments div
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	background-color: rgb(2, 119, 209);
+	color: rgb(182, 210, 254);
+	transition: transform 150ms;
+}
+.play
+{
+	animation: playing .5s;
+}
+@keyframes playing
+{
+	0% {transform: scale(1);}
+	50% {transform: scale(1.1);}
+	100% {transform: scale(1);}
+}
