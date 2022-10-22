@@ -20,4 +20,5 @@ addEventListener("keydown", e =>{
 		sound.play();
 	}
 })
+
 setInterval(() => {instrument.classList.remove("play")}, 100);

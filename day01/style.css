@@ -9,14 +9,12 @@
 body
 {
 	padding: 5rem ;
-	/* border: 1px solid red; */
 }
 
 .container .image img
 {
 	width: 300px;
 	margin-bottom: 5rem;
-	/* border: 1px solid red; */
 }
 .container
 {
@@ -24,7 +22,6 @@ body
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
-	/* border: 1px solid rgb(81, 0, 255); */
 }
 .instruments
 {
@@ -32,7 +29,6 @@ body
 	gap : 1rem;
 	grid-template-columns: repeat(3, 100px);
 	grid-template-rows: repeat(3, 100px);
-	/* border: 1px solid rgb(61, 157, 9); */
 }
 .instruments div
 {

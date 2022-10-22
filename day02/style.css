@@ -1,0 +1,97 @@
+
+*, *::after, *::before
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root
+{
+	--clockWidth: 500px;
+	--clockBorder: 2px;
+	--borderLong : 20px;
+	--sBorderLong : 20px;
+	--mBorderLong : 50px;
+	--hBorderLong : 100px;
+}
+
+body
+{
+	display: flex;
+	justify-content: center;
+	padding: 5rem ;
+}
+
+.container
+{
+	max-width: var(--clockWidth);
+	width: 100%;
+	background-image: url("assets/bg2.png") ;
+	background-repeat: no-repeat;
+}
+
+.clock
+{
+	min-width: var(--clockWidth);
+	min-height: var(--clockWidth);
+	border-radius: 50% ;
+	border: var(--clockBorder) solid rgba(49, 49, 49, 0.576);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	transition: all .2s;
+}
+.clock::before
+{
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: black;
+	z-index: 10;
+}
+
+.hour_hand
+{
+	border-radius: 3px;
+	position: absolute;
+	background-color: rgb(147, 147, 147);
+}
+.second
+{
+	left: var(--sBorderLong);
+	width: 250px;
+	height: 5px;
+	transform-origin: calc(var(--clockWidth)/2 - var(--clockBorder) - (var(--sBorderLong)));
+	background-color: rgb(255, 0, 0);
+}
+.minute
+{
+	left: var(--mBorderLong);
+	width: 200px;
+	height: 10px;
+	transform-origin: calc(var(--clockWidth)/2 - var(--clockBorder) - (var(--mBorderLong)));
+	background-color: rgb(51, 51, 51);
+}
+.hour
+{
+	left: var(--hBorderLong);
+	width: 150px;
+	height: 10px;
+	transform-origin: calc(var(--clockWidth)/2 - var(--clockBorder) - (var(--hBorderLong)));
+	background-color: rgb(42, 44, 86);
+}
+
+.fa-solid
+{
+	font-size: 2rem;
+	margin: 1rem;
+	cursor: pointer;
+	transition: color 0.5s;
+}
+.fa-solid:hover
+{
+	color: rgb(108, 108, 108);
+}
