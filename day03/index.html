@@ -6,9 +6,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/4c426bc71c.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="style.css">
-	<title>css</title>
+	<title>css var</title>
 </head>
 <body>
+	<h1>Update Css Variables With <span class="jsColor"> JAVASCRIPT </span></h1>
+	<div class="container">
+		<label for="file">Spacing:</label>
+		<input id= "spacing" type="range" name="spacing" oninput="spacing(this.value)">
+		<label for="file">blur:</label>
+		<input id= "blur" type="range" name="blur" oninput="blurs(this.value)">
+		<label for="file">Color:</label>
+		<input id= "color" type="color" oninput="color(this.value)">
+		<div class="image">
+			<img src="assets/bg1.jpeg" alt="">
+		</div>
+	</div>
 	<script src="script.js"></script>
 </body>
 </html>
