@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+*, *::after, *::before
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root
+{
+}
+
+.container
+{
+	display: flex;
+}
+
+.panel p
+{
+	transition: all 900ms;
+	text-shadow: 1px 1px 30px black;
+	margin: 2rem 0;
+}
+
+.top
+{
+	position: relative;
+	top:-100%
+}
+
+.buttom
+{
+	position: relative;
+	bottom:-100%
+}
+.grow
+{
+	font-size: 2rem;
+}
+
+.panel
+{
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%;
+	cursor: pointer;
+	transition: all 700ms cubic-bezier(1, -0.24, 0.65, 0.68);
+	font-size: 3rem;
+	font-family: 'Mochiy Pop One', sans-serif;
+	filter:grayscale(100%);
+	font-weight: 700;
+	color: white;
+	text-align: center;
+	padding-top: 40vh;
+	overflow: hidden;
+}
+.let
+{
+	background-image: url("assets/img1.jpeg");
+	flex-basis: calc(100% / 5);
+}
+.take
+{
+	background-image: url("assets/img2.jpeg");
+	flex-basis: calc(100% / 5);
+}
+.it
+{
+	background-image: url("assets/img3.jpeg");
+	flex-basis: calc(100% / 5);
+}
+.all
+{
+	background-image: url("assets/img4.jpeg");
+	flex-basis: calc(100% / 5);
+}
+.in
+{
+	background-image: url("assets/img5.jpeg");
+	flex-basis: calc(100% / 5);
+}
